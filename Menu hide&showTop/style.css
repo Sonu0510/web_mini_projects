@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contaier {
+    width: 100%;
+    height: 100vh;
+    background: #eeeedf;
+    position: relative;
+    visibility: hidden;
+}
+
+.menuIcon {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.menuBox {
+    width: 80%;
+    background: #242449;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    padding: 50px 100px;
+    transition: top 2s;
+}
+
+.rightLinks {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.rightLinks img{
+    width: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.rightLinks a {
+    text-decoration: none;
+    color: white;
+    background: #f92537;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.menuLinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuLinks a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 22px;
+    width: 200px;
+}
+
+.menuLinks a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: red;
+    display: none;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    
+}
+
+.menuLinks a:hover {
+    font-weight: 700;
+}
+
+.menuLinks a:hover::after {
+    display: inline-block;
+    width: 40px;
+}
+
